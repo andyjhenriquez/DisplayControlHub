@@ -1,0 +1,88 @@
+/* Apply basic styles to the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header section */
+header {
+    background-color: #000A30;
+    color: white;
+    padding: 0.5rem; /* Reduce padding to make the header smaller */
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style the logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo image */
+.logo {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+/* Style the site name */
+.site-name {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Style the navigation bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style each navigation item */
+nav ul li {
+    margin: 0;
+}
+
+/* Style the navigation links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Adjust padding for a more compact design */
+    display: block;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+/* Remove link background change on hover */
+nav ul li a:hover {
+    color: #ccc; /* Change text color on hover for a subtle effect */
+}
+
+/* Style the main content area */
+main {
+    padding: 2rem;
+}
+
+/* Style each section within the main content area */
+.section {
+    margin: 2rem 0;
+}
+
+/* Responsive design: Adjust navigation for small screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
